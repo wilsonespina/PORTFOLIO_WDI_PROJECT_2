@@ -5,12 +5,8 @@ const mealsController         = require('../controllers/meals');
 const sessionsController      = require('../controllers/sessions');
 const secureRoute             = require('../lib/secureRoute');
 
-// A home route
+// HOMEPAGE
 router.get('/', (req, res) => res.render('homepage'));
-
-// router.route('/login')
-//   .get(sessionsController.new)
-//   .post(sessionsController.create);
 
 router.route('/meals')
   .get(mealsController.index)

@@ -1,13 +1,13 @@
 const User = require('../models/user');
 
 function registrationNew(req, res) {
-  res.render('registration/new');
+  return res.render('registration/new');
 }
 
 function registrationCreate(req, res){
   User
     .create(req.body)
-    .then((user) => {
+    .then(() => {
       res.redirect('/');
     })
     .catch((err) => {

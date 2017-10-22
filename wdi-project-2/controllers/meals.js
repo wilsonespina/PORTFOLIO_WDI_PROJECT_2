@@ -1,6 +1,5 @@
 const Meal = require('../models/meal');
 
-
 function indexRoute(req, res, next) {
   Meal
     .find()

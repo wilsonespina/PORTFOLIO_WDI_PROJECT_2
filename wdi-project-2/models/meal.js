@@ -14,12 +14,12 @@ commentSchema.methods.belongsTo = function belongsTo(user) {
 
 const mealSchema = new mongoose.Schema({
   name: String,
+  location: String,
   address: {
     line1: { type: String, required: true },
     line2: String,
     city: { type: String, required: true },
-    postcode: { type: String, required: true },
-    country: { type: String, required: true }
+    postcode: { type: String, required: true }
   },
   image: { type: String, required: true },
   stars: { type: Number, required: true },

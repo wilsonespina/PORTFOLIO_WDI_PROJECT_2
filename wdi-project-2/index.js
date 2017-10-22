@@ -10,6 +10,8 @@ const routes = require('./config/routes');
 const customResponses = require('./lib/customResponses');
 const authentication = require('./lib/authentication');
 const errorHandler = require('./lib/errorHandler');
+const User = require('./models/user');
+
 
 const app = express();
 const { port, dbUri, sessionSecret } = require('./config/environment');
@@ -41,5 +43,27 @@ app.use(methodOverride(function (req) {
 app.use(authentication);
 app.use(routes);
 app.use(errorHandler);
+
+// Check user ID
+app.use((req, res, next) => {
+  if (!req.session.userId) return next();
+
+  User
+    .findById(req.session.userId)
+    .exec()
+    .then(user=> {
+      if (!user) {
+        return req.session.regenerate(() => {
+          res.redirect('/');
+        });
+      }
+      req.session.userId = user._id;
+      res.locals.user = user;
+      res.locals.isLoggedIn = true;
+
+      next();
+    });
+});
+
 
 app.listen(port, () => console.log(`Express is listening on port ${port}`));

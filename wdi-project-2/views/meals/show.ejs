@@ -1,0 +1,56 @@
+<div class="large-12 columns">
+  <img src="<%= hotel.image %>" alt="<%= hotel.name %>">
+  <h2><%= hotel.name %></h2>
+
+  <p>
+    <%= hotel.address.line1 %><br>
+    <% if(hotel.address.line2) { %><%= hotel.address.line2 %><br><% } %>
+    <%= hotel.address.city %><br>
+    <%= hotel.address.postcode %><br>
+    <%= hotel.address.country %>
+  </p>
+
+  <p>
+    <% while(hotel.stars--) { %> &star; <% } %>
+  </p>
+
+  <p>
+    <%= hotel.createdBy.username %>
+  </p>
+
+  <% if(locals.isAuthenticated && hotel.belongsTo(user)) { %>
+  <a href="/hotels/<%= hotel.id %>/edit">Edit</a>
+  <form method="POST" action="/hotels/<%= hotel.id %>">
+    <input type="hidden" name="_method" value="DELETE">
+    <button>Delete</button>
+  </form>
+<% } %>
+
+<% if(locals.isAuthenticated) { %>
+  <section>
+    <h4>Leave a comment</h4>
+    <form method="POST" action="/hotels/<%= hotel.id %>/comments">
+      <textarea name="content" id="content" placeholder="Comment"></textarea>
+      <button class="button">Leave a comment</button>
+    </form>
+  </section>
+<% } %>
+
+<section>
+  <h4>Comments</h4>
+  <% hotel.comments.forEach((comment) => { %>
+    <p><%= comment.content %></p>
+    <small><%= comment.createdBy.username %></small>
+
+    <% if(locals.isAuthenticated && comment.belongsTo(user)) { %>
+      <form method="POST" action="/hotels/<%= hotel.id %>/comments/<%= comment.id %>">
+        <input type="hidden" name="_method" value="DELETE">
+        <button>Delete</button>
+      </form>
+    <% } %>
+  <% }) %>
+</section>
+
+
+
+</div>

@@ -6,13 +6,13 @@ const sessionsController      = require('../controllers/sessions');
 const secureRoute             = require('../lib/secureRoute');
 
 // HOMEPAGE
-router.get('/', (req, res) => res.render('homepage'));
+router.get('/', (req, res) => res.render('statics/homepage'));
 
-router.route('/meals')
+router.route('/meals') //WORKING
   .get(mealsController.index)
   .post(secureRoute, mealsController.create);
 
-router.route('/meals/new')
+router.route('/meals/new') //WORKING????
   .get(secureRoute, mealsController.new);
 
 router.route('/meals/:id')

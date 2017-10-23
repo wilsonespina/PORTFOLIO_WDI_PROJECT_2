@@ -1,7 +1,7 @@
 <% meals.forEach((meal) => { %>
   <div class="large-4 columns">
     <a href="/meals/<%= meal.id %>">
-      <img class="thumbnail" src="<%= meal.image %>" alt="<%= meal.name %>">
+      <img class="thumbnail" src="<%= meal.image %>" alt="<%= meal.name %>" width=500px>
       <h2><%= meal.name %></h2>
       <p>
         <%= meal.address.line1 %><br>

@@ -12,24 +12,29 @@ router.get('/', (req, res) => res.render('statics/homepage'));
 
 router.route('/meals') //WORKING
   .get(mealsController.index)
-  .post(secureRoute, mealsController.create);
+  .post(mealsController.create);
+  // .post(secureRoute, mealsController.create);
 
 router.route('/meals/new') //WORKING????
-  .get(secureRoute, mealsController.new);
+  .get(mealsController.new);
+  // .get(secureRoute, mealsController.new);
 
 router.route('/meals/:id') //WORKING
   .get(mealsController.show)
-  .put(secureRoute, mealsController.update)
-  .delete(secureRoute, mealsController.delete);
+  .put(mealsController.update)
+  .delete(mealsController.delete);
+  // .put(secureRoute, mealsController.update)
+  // .delete(secureRoute, mealsController.delete);
 
 router.route('/meals/:id/edit') //CANT LOGIN
-  .get(secureRoute, mealsController.edit);
+  .get(mealsController.edit);
+  // .get(secureRoute, mealsController.edit);
 
-router.route('/register') //WORKING
+router.route('/register') //WORKING!!
   .get(registrationsController.new)
   .post(registrationsController.create);
 
-router.route('/login') //WORKING CANT LOGIN
+router.route('/login') //WORKINF
   .get(sessionsController.new)
   .post(sessionsController.create);
 
@@ -38,10 +43,13 @@ router.route('/logout')
 
 //COMMENTS
 router.route('/meals/:id/comments')
-  .post(secureRoute, mealsController.createComment);
+  .post(mealsController.createComment);
+  // .post(secureRoute, mealsController.createComment);
+
 //DELETE COMMENTS
 router.route('/meals/:id/comments/:commentId')
-  .delete(secureRoute, mealsController.deleteComment);
+  .delete(mealsController.deleteComment);
+  // .delete(secureRoute, mealsController.deleteComment);
 
 router.all('*', (req, res) => res.notFound());
 

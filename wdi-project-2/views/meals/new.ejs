@@ -1,10 +1,14 @@
 <form method="POST" action="/meals">
   <div>
-    <label for="name">Name TESTING</label>
+    <label for="name">Name</label>
     <input type="text" name="name" id="name" required>
   </div>
   <fieldset>
     <legend>Address</legend>
+    <div>
+      <label for="location">Location</label>
+      <input type="text" name="address[location]" id="location" required>
+    </div>
     <div>
       <label for="line1">Line 1</label>
       <input type="text" name="address[line1]" id="line1" required>
@@ -14,16 +18,8 @@
       <input type="text" name="address[line2]" id="line2">
     </div>
     <div>
-      <label for="city">City</label>
-      <input type="text" name="address[city]" id="city" required>
-    </div>
-    <div>
       <label for="postcode">Postcode</label>
       <input type="text" name="address[postcode]" id="postcode" required>
-    </div>
-    <div>
-      <label for="country">Country</label>
-      <input type="text" name="address[country]" id="country" required>
     </div>
   </fieldset>
   <div>

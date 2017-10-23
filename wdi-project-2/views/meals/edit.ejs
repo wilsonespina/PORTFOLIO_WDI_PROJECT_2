@@ -1,39 +1,35 @@
-<form method="POST" action="/hotels/<%= hotel.id %>">
+<form method="POST" action="/meals/<%= meal.id %>">
   <input type="hidden" name="_method" value="PUT">
   <div>
     <label for="name">Name</label>
-    <input type="text" name="name" id="name" value="<%= hotel.name %>" required>
+    <input type="text" name="name" id="name" required>
   </div>
   <fieldset>
     <legend>Address</legend>
     <div>
+      <label for="location">Location</label>
+      <input type="text" name="address[location]" id="location" required>
+    </div>
+    <div>
       <label for="line1">Line 1</label>
-      <input type="text" name="address[line1]" id="line1" value="<%= hotel.address.line1 %>" required>
+      <input type="text" name="address[line1]" id="line1" required>
     </div>
     <div>
       <label for="line2">Line 2</label>
-      <input type="text" name="address[line2]" id="line2" value="<%= hotel.address.line2 %>">
-    </div>
-    <div>
-      <label for="city">City</label>
-      <input type="text" name="address[city]" id="city" value="<%= hotel.address.city %>" required>
+      <input type="text" name="address[line2]" id="line2">
     </div>
     <div>
       <label for="postcode">Postcode</label>
-      <input type="text" name="address[postcode]" id="postcode" value="<%= hotel.address.postcode %>" required>
-    </div>
-    <div>
-      <label for="country">Country</label>
-      <input type="text" name="address[country]" id="country" value="<%= hotel.address.country %>" required>
+      <input type="text" name="address[postcode]" id="postcode" required>
     </div>
   </fieldset>
   <div>
     <label for="stars">Stars</label>
-    <input type="number" name="stars" id="stars" min="1" max="5" value="<%= hotel.stars %>" required>
+    <input type="number" name="stars" id="stars" min="1" max="5" required>
   </div>
   <div>
     <label for="image">Image</label>
-    <input type="text" name="image" id="image" value="<%= hotel.address.image %>" required>
+    <input type="text" name="image" id="image" required>
   </div>
 
   <button class="button">Update Hotel</button>

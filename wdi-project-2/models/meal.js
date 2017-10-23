@@ -17,9 +17,9 @@ const mealSchema = new mongoose.Schema({
   location: { type: String, required: true },
   description: String,
   address: {
-    line1: { type: String, required: true },
+    line1: String,
     line2: String,
-    postcode: { type: String, required: true }
+    postcode: String
   },
   image: { type: String, required: true },
   googleMap: { type: String, required: true },

@@ -19,7 +19,11 @@ function createRoute(req, res, next) {
 
   Meal
     .create(req.body)
-    .then(() => res.redirect('/meals'))
+    .then((meal) => {
+      console.log(req.body);
+      console.log(meal);
+      res.redirect('/meals');
+    })
     .catch((err) => {
       if(err.name === 'ValidationError') return res.badRequest(`/meals/${req.params.id}/edit`, err.toString());
       next(err);
@@ -45,7 +49,7 @@ function editRoute(req, res, next) {
     .exec()
     .then((meal) => {
       if(!meal) return res.redirect();
-      // if(!meal.belongsTo(userId)) return res.unauthorized(`/meals/${meal.id}`, 'You do not have permission to edit that resource');
+      if(!meal.belongsTo(req.user)) return res.unauthorized(`/meals/${meal.id}`, 'You do not have permission to edit that resource');
       return res.render('meals/edit', { meal });
     })
     .catch(next);
@@ -57,7 +61,7 @@ function updateRoute(req, res, next) {
     .exec()
     .then((meal) => {
       if(!meal) return res.notFound();
-      // if(!meal.belongsTo(req.user)) return res.unauthorized(`/meals/${meal.id}`, 'You do not have permission to edit that resource');
+      if(!meal.belongsTo(req.user)) return res.unauthorized(`/meals/${meal.id}`, 'You do not have permission to edit that resource');
       for(const field in req.body) {
         meal[field] = req.body[field];
       }

@@ -22,8 +22,6 @@ const mealSchema = new mongoose.Schema({
     postcode: String
   },
   image: { type: String, required: true },
-  // googleMap: { type: String, required: true },
-  website: { type: String, required: true },
   stars: { type: Number, required: true },
   createdBy: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   comments: [ commentSchema ]

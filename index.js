@@ -41,8 +41,8 @@ app.use(methodOverride(function (req) {
   }
 }));
 app.use(authentication);
-app.use(routes);
 app.use(errorHandler);
+app.use(routes);
 
 // Check user ID
 // app.use((req, res, next) => {

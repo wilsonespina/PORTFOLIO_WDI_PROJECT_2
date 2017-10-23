@@ -1,4 +1,4 @@
-<form method="POST" action="/meals/<%= meal.id %>">
+<form method="POST" action="/meals/<%= meal._id %>">
   <input type="hidden" name="_method" value="PUT">
   <div>
     <label for="name">Name</label>
@@ -31,7 +31,7 @@
   </div>
   <div>
     <label for="image">Image</label>
-    <input type="text" name="image" id="image" value="<%= meal.address.image %>">
+    <input type="text" name="image" id="image" value="<%= meal.image %>">
   </div>
 
   <button class="button">Update Katsu Spot</button>

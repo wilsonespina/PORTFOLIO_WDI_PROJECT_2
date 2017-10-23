@@ -33,8 +33,6 @@ User
           postcode: 'WC2H 7JJ'
         },
         image: 'https://media-cdn.tripadvisor.com/media/photo-s/07/13/8d/8a/tokyo-diner.jpg',
-        googleMap: 'https://www.google.co.uk/maps?q=tokyo+diner&um=1&ie=UTF-8&sa=X&ved=0ahUKEwj18ZHVrYbXAhVDSRoKHQ-GB7gQ_AUICigB',
-        website: 'https://foursquare.com/v/tokyo-diner/4ac518d4f964a520bea720e3?openPhotoId=4fc24fb5e4b0117b73ec5aae',
         stars: 4,
         createdBy: users[0]
       },{
@@ -46,8 +44,6 @@ User
           postcode: 'WC1N 1AF'
         },
         image: 'https://www.mybookingbox.co.uk/uploads/venue/resto/201511140548005142.jpg',
-        googleMap: 'https://www.google.co.uk/maps/place/Hare+%26+Tortoise/@51.523999,-0.1252125,17z/data=!3m2!4b1!5s0x48761b30b69488d7:0x86afa0f0eae201c5!4m5!3m4!1s0x48761b30b38aa395:0xc681d5dde4ad8d04!8m2!3d51.523999!4d-0.1230185',
-        website: 'http://www.hareandtortoise.co.uk/',
         stars: 4,
         createdBy: users[0]
       }]);

@@ -23,7 +23,7 @@ router.route('/meals/:id')
 router.route('/meals/:id/edit')
   .get(secureRoute, mealsController.edit);
 
-router.route('/register')
+router.route('/register') //WORKING
   .get(registrationsController.new)
   .post(registrationsController.create);
 

@@ -1,14 +1,15 @@
 const User = require('../models/user');
 
-function registrationNew(req, res) {
+function registrationsNew(req, res) {
   return res.render('registrations/new');
 }
 
-function registrationCreate(req, res){
+function registrationsCreate(req, res){
   User
     .create(req.body)
-    .then(() => {
-      res.redirect('/');
+    .then((user) => {
+      req.flash('info', `Thanks for registering, ${user.username}! Please login`);
+      return res.redirect('/');
     })
     .catch((err) => {
       if (err.name === 'ValidationError') {
@@ -19,6 +20,6 @@ function registrationCreate(req, res){
 }
 
 module.exports = {
-  new: registrationNew,
-  create: registrationCreate
+  new: registrationsNew,
+  create: registrationsCreate
 };

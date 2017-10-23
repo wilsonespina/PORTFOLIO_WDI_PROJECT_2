@@ -3,13 +3,16 @@
   <h2><%= meal.name %></h2>
 
   <p>
-    <%= meal.address.line1 %><br>
-    <% if(meal.address.line2) { %><%= meal.address.line2 %><br><% } %>
-    <%= meal.address.postcode %><br>
+    <%= meal.description %><br>
+    <%= meal.location %><br>
   </p>
 
   <p>
     <% while(meal.stars--) { %> &star; <% } %>
+  </p>
+
+  <p>
+    <%= meal.image %><br>
   </p>
 
   <p>

@@ -28,10 +28,10 @@ User
         name: 'Tokyo Diner',
         location: 'China Town, Soho',
         description: 'Simple Japanese diner serving sushi, bento, noodles and curries',
-        address: {
-          line1: '2 Newport Pl',
-          postcode: 'WC2H 7JJ'
-        },
+        // address: {
+        //   line1: '2 Newport Pl',
+        //   postcode: 'WC2H 7JJ'
+        // },
         image: 'https://media-cdn.tripadvisor.com/media/photo-s/07/13/8d/8a/tokyo-diner.jpg',
         stars: 4,
         createdBy: users[0]
@@ -39,10 +39,10 @@ User
         name: 'Hare & Tortoise',
         location: 'Brunskwick Square, Bloomsbury',
         description: 'Simple Japanese diner serving sushi, bento, noodles and curries',
-        address: {
-          line1: '11-13 Brunswick Square',
-          postcode: 'WC1N 1AF'
-        },
+        // address: {
+        //   line1: '11-13 Brunswick Square',
+        //   postcode: 'WC1N 1AF'
+        // },
         image: 'https://www.mybookingbox.co.uk/uploads/venue/resto/201511140548005142.jpg',
         stars: 4,
         createdBy: users[0]

@@ -4,30 +4,21 @@
     <label for="name">Name</label>
     <input type="text" name="name" id="name" value="<%= meal.name %>" required>
   </div>
+  <div>
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description" value="<%= meal.description %>">
+  </div>
   <fieldset>
+    <legend>Address</legend>
     <div>
       <label for="location">Location</label>
       <input type="text" name="location" id="location" value="<%= meal.location %>" required>
     </div>
-
-    <legend>Address</legend>
-
-    <div>
-      <label for="line1">Line 1</label>
-      <input type="text" name="address[line1]" id="line1" value="<%= meal.address.line1 %>">
-    </div>
-    <div>
-      <label for="line2">Line 2</label>
-      <input type="text" name="address[line2]" id="line2" value="<%= meal.address.line2 %>">
-    </div>
-    <div>
-      <label for="postcode">Postcode</label>
-      <input type="text" name="address[postcode]" id="postcode" value="<%= meal.address.postcode %>" required>
-    </div>
   </fieldset>
+
   <div>
     <label for="stars">Stars</label>
-    <input type="number" name="stars" id="stars" min="1" max="5" value="<%= meal.stars %>">
+    <input type="number" name="stars" id="stars" min="1" max="5" value="<%= meal.stars %>" required>
   </div>
   <div>
     <label for="image">Image</label>

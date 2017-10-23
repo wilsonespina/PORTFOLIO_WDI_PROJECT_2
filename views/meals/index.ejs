@@ -4,11 +4,9 @@
       <img class="thumbnail" src="<%= meal.image %>" alt="<%= meal.name %>" width=500px>
       <h2><%= meal.name %></h2>
       <p>
-        <%= meal.address.line1 %><br>
+        <%= meal.description %><br>
         <%= meal.location %><br>
-        <% if(meal.address.line2) { %><%= meal.address.line2 %><br><% } %>
-        <%= meal.address.postcode %><br>
-        <%= meal.address.country %>
+
       </p>
 
       <p>

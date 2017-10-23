@@ -8,27 +8,27 @@ const secureRoute             = require('../lib/secureRoute');
 // HOMEPAGE
 router.get('/', (req, res) => res.render('statics/homepage'));
 
-router.route('/meals') //WORKING
+router.route('/meals')
   .get(mealsController.index)
-  .post(secureRoute, mealsController.create);//dont forget to add secureRoute
+  .post(secureRoute, mealsController.create);
 
-router.route('/meals/new') //WORKING????
-  .get(secureRoute, mealsController.new); //dont forget to add secureRoute
+router.route('/meals/new')
+  .get(secureRoute, mealsController.new);
 
-router.route('/meals/:id/edit') //CANT LOGIN
+router.route('/meals/:id/edit')
   .get(secureRoute, mealsController.edit);
 
-router.route('/meals/:id') //WORKING
+router.route('/meals/:id')
   .get(mealsController.show)
   .put(secureRoute, mealsController.update)
   .delete(secureRoute, mealsController.delete);
 
 
-router.route('/register') //WORKING!!
+router.route('/register')
   .get(registrationsController.new)
   .post(registrationsController.create);
 
-router.route('/login') //WORKINF
+router.route('/login')
   .get(sessionsController.new)
   .post(sessionsController.create);
 

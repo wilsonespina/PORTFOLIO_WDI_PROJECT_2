@@ -10,7 +10,7 @@ function indexRoute(req, res, next) {
 }
 
 function newRoute(req, res) {
-  return res.render('meals/new');
+  res.render('meals/new');
 }
 
 function createRoute(req, res, next) {

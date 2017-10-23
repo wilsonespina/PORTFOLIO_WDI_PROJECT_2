@@ -5,6 +5,8 @@ const mealsController         = require('../controllers/meals');
 const sessionsController      = require('../controllers/sessions');
 const secureRoute             = require('../lib/secureRoute');
 
+
+
 // HOMEPAGE
 router.get('/', (req, res) => res.render('statics/homepage'));
 
@@ -15,19 +17,19 @@ router.route('/meals') //WORKING
 router.route('/meals/new') //WORKING????
   .get(secureRoute, mealsController.new);
 
-router.route('/meals/:id')
+router.route('/meals/:id') //WORKING
   .get(mealsController.show)
   .put(secureRoute, mealsController.update)
   .delete(secureRoute, mealsController.delete);
 
-router.route('/meals/:id/edit')
+router.route('/meals/:id/edit') //CANT LOGIN
   .get(secureRoute, mealsController.edit);
 
 router.route('/register') //WORKING
   .get(registrationsController.new)
   .post(registrationsController.create);
 
-router.route('/login')
+router.route('/login') //WORKING CANT LOGIN
   .get(sessionsController.new)
   .post(sessionsController.create);
 

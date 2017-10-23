@@ -45,25 +45,26 @@ app.use(routes);
 app.use(errorHandler);
 
 // Check user ID
-app.use((req, res, next) => {
-  if (!req.session.userId) return next();
+// app.use((req, res, next) => {
+//   if (!req.session.userId) return next();
+//
+//   User
+//     .findById(req.session.userId)
+//     .exec()
+//     .then(user=> {
+//       if (!user) {
+//         return req.session.regenerate(() => {
+//           res.redirect('/');
+//         });
+//       }
+//       req.session.userId = user._id;
+//       res.locals.user = user;
+//       res.locals.isLoggedIn = true;
+//
+//       next();
+//     });
+// });
 
-  User
-    .findById(req.session.userId)
-    .exec()
-    .then(user=> {
-      if (!user) {
-        return req.session.regenerate(() => {
-          res.redirect('/');
-        });
-      }
-      req.session.userId = user._id;
-      res.locals.user = user;
-      res.locals.isLoggedIn = true;
-
-      next();
-    });
-});
 
 
 app.listen(port, () => console.log(`Express is listening on port ${port}`));

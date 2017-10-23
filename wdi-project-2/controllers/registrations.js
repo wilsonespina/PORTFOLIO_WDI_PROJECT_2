@@ -8,16 +8,20 @@ function registrationsCreate(req, res){
   User
     .create(req.body)
     .then((user) => {
-      req.flash('info', `Thanks for registering, ${user.username}! Please login`);
-      return res.redirect('/');
+      // req.flash('info', `Thanks for registering, ${user.username}! Please login`);
+      res.redirect('/login');
+      console.log(user);
     })
     .catch((err) => {
       if (err.name === 'ValidationError') {
         return res.status(400).render('registrations/new', { message: 'Passwords do not match' });
       }
+      // next(err);
       res.status(500).end();
     });
+
 }
+
 
 module.exports = {
   new: registrationsNew,

@@ -12,7 +12,6 @@ function sessionsCreate(req, res) {
         req.flash('danger', 'Unknown email/password combination');
         return res.status(401).render('sessions/new', { message: 'Unrecognised credentials' });
       }
-
       req.session.userId = user.id;
       // req.session.isAuthenticated = true;
       req.flash('info', `Welcome back, ${user.username}!`);

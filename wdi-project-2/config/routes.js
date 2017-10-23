@@ -3,7 +3,7 @@ const router                  = express.Router();
 const registrationsController = require('../controllers/registrations');
 const mealsController         = require('../controllers/meals');
 const sessionsController      = require('../controllers/sessions');
-const secureRoute             = require('../lib/secureRoute');
+// const secureRoute             = require('../lib/secureRoute');
 
 
 
@@ -19,6 +19,10 @@ router.route('/meals/new') //WORKING????
   .get(mealsController.new);
   // .get(secureRoute, mealsController.new);
 
+  router.route('/meals/:id/edit') //CANT LOGIN
+  .get(mealsController.edit);
+  // .get(secureRoute, mealsController.edit);
+
 router.route('/meals/:id') //WORKING
   .get(mealsController.show)
   .put(mealsController.update)
@@ -26,9 +30,6 @@ router.route('/meals/:id') //WORKING
   // .put(secureRoute, mealsController.update)
   // .delete(secureRoute, mealsController.delete);
 
-router.route('/meals/:id/edit') //CANT LOGIN
-  .get(mealsController.edit);
-  // .get(secureRoute, mealsController.edit);
 
 router.route('/register') //WORKING!!
   .get(registrationsController.new)

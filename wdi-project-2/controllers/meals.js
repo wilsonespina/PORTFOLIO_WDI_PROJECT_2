@@ -45,7 +45,7 @@ function editRoute(req, res, next) {
     .exec()
     .then((meal) => {
       if(!meal) return res.redirect();
-      if(!meal.belongsTo(req.user)) return res.unauthorized(`/meals/${meal.id}`, 'You do not have permission to edit that resource');
+      // if(!meal.belongsTo(userId)) return res.unauthorized(`/meals/${meal.id}`, 'You do not have permission to edit that resource');
       return res.render('meals/edit', { meal });
     })
     .catch(next);
@@ -57,14 +57,13 @@ function updateRoute(req, res, next) {
     .exec()
     .then((meal) => {
       if(!meal) return res.notFound();
-      if(!meal.belongsTo(req.user)) return res.unauthorized(`/meals/${meal.id}`, 'You do not have permission to edit that resource');
+      // if(!meal.belongsTo(req.user)) return res.unauthorized(`/meals/${meal.id}`, 'You do not have permission to edit that resource');
       for(const field in req.body) {
         meal[field] = req.body[field];
       }
-
       return meal.save();
     })
-    .then(() => res.redirect(`/meals/${req.params.id}`))
+    .then((meal) => res.redirect(`/meals/${meal.id}`))
     .catch((err) => {
       if(err.name === 'ValidationError') return res.badRequest(`/meals/${req.params.id}/edit`, err.toString());
       next(err);

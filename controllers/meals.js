@@ -5,7 +5,20 @@ function indexRoute(req, res, next) {
     .find()
     .populate('createdBy')
     .exec()
-    .then((meals) => res.render('meals/index', { meals }))
+    .then((meals) => {
+      const array = meals;
+      console.log(array);
+      // const newArray = [];
+      // for (var i = 0; i < array.length; i++) {
+      //   const rating = array[i].stars;
+      //   newArray.push(rating);
+      // }
+      // const result = newArray.reduce(function(accumulator, currentValue) {
+      //   return accumulator + currentValue;
+      // });
+      // const avgRating = Math.ceil(result / array.length);
+      res.render('meals/index', { meals } );
+    })
     .catch(next);
 }
 
@@ -37,6 +50,7 @@ function showRoute(req, res, next) {
     .exec()
     .then((meal) => {
       const array = meal.comments;
+      console.log(array);
       const newArray = [];
       for (var i = 0; i < array.length; i++) {
         const rating = array[i].stars;
@@ -47,8 +61,7 @@ function showRoute(req, res, next) {
       });
       const avgRating = Math.ceil(result / array.length);
       if(!meal) return res.notFound();
-
-      return res.render('meals/show', { meal } );
+      return res.render('meals/show', { meal, avgRating } );
     })
     .catch(next);
 }

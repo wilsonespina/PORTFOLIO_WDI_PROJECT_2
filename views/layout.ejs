@@ -8,8 +8,9 @@
 </head>
 <body>
   <header>
-    <% include ./partials/_navbar %>
+    <h1>Katsu Spots</h1>
   </header>
+  <% include ./partials/_navbar %>
   <main class="container">
     <% for(const type in messages) { %>
       <div class="callout <%= type %>">
@@ -18,7 +19,9 @@
       <% } %>
     <%- body %>
   </main>
-  <% include ./partials/_footer.ejs %>
-  <% include ./partials/_scripts.ejs %>
+  <footer>
+    <% include ./partials/_footer.ejs %>
+  </footer>
+    <% include ./partials/_scripts.ejs %>
 </body>
 </html>

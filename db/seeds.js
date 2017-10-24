@@ -47,7 +47,7 @@ User
         image: 'https://www.mybookingbox.co.uk/uploads/venue/resto/201511140548005142.jpg',
         googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19864.59457714899!2d-0.1468499817681479!3d51.51185245595083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b30b38aa395%3A0xc681d5dde4ad8d04!2sHare+%26+Tortoise!5e0!3m2!1sen!2suk!4v1508836819778',
         stars: 4,
-        createdBy: users[0]
+        createdBy: users[1]
       },{
         name: 'Misato',
         location: 'Wardour Street, Soho',
@@ -79,7 +79,7 @@ User
         image: 'https://junk4lunch.files.wordpress.com/2013/07/wpid-img_20130709_japanesecanteen2.jpg',
         googleMaps: 'https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2482.8692793400655!2d-0.08036858422973489!3d51.51561417963646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sthe+japanese+canteen+bishopsgate!5e0!3m2!1sen!2suk!4v1508840321503',
         stars: 4,
-        createdBy: users[0]
+        createdBy: users[1]
       }]);
   })
 

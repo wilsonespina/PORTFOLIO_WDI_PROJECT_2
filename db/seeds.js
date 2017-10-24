@@ -46,12 +46,20 @@ User
         description: 'Simple Japanese diner serving sushi, bento, noodles and curries',
         image: 'https://media-cdn.tripadvisor.com/media/photo-s/07/13/8d/8a/tokyo-diner.jpg',
         googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0742499945195!2d-0.13152908445416628!3d51.511853779635786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d278f6369d%3A0x3cb44bdffa6c1563!2sTokyo+Diner!5e0!3m2!1sen!2suk!4v1508836497189',
-        stars: 4,
+        stars: 2, //find average!!!
         createdBy: users[0],
         comments: [{
-          content: 'Love this place', createdBy: users[0]},
-        { content: 'Great atmosphere, their katsu curry is my jam.', createdBy: users[1]},
-        { content: 'This is soooo nice', createdBy: users[2]
+          content: 'Love this place',
+          createdBy: users[0],
+          stars: 5
+        },{
+          content: 'Great atmosphere, their katsu curry is my jam.',
+          createdBy: users[1],
+          stars: 3
+        },{
+          content: 'This is soooo nice',
+          createdBy: users[2],
+          stars: 3
         }]
       },{
         name: 'Hare & Tortoise',
@@ -62,9 +70,9 @@ User
         stars: 4,
         createdBy: users[1],
         comments: [{
-          content: 'Love this place', createdBy: users[0]},
-        { content: 'this is soooo nice', createdBy: users[1]},
-        { content: 'this is soooo nice', createdBy: users[2]
+          content: 'Love this place', createdBy: users[0], stars: 3 },
+        { content: 'this is soooo nice', createdBy: users[1], stars: 3 },
+        { content: 'this is soooo nice', createdBy: users[2], stars: 3
         }]
       },{
         name: 'Misato',
@@ -75,9 +83,9 @@ User
         stars: 5,
         createdBy: users[0],
         comments: [{
-          content: 'Love this place', createdBy: users[0]},
-        { content: 'this is soooo nice', createdBy: users[1]},
-        { content: 'this is soooo nice', createdBy: users[2]
+          content: 'Love this place', createdBy: users[0], stars: 3 },
+        { content: 'this is soooo nice', createdBy: users[1], stars: 2 },
+        { content: 'this is soooo nice', createdBy: users[2], stars: 3
         }]
       },{
         name: 'M&D Japanese',
@@ -86,7 +94,12 @@ User
         image: 'https://intrepidbean.files.wordpress.com/2015/06/md3.jpg',
         googleMaps: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9939.721258977064!2d-0.0260776!3d51.4777934!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5035fb7fe6920089!2sM+and+D+Japanese+Deptford!5e0!3m2!1sen!2suk!4v1508839845640',
         stars: 4,
-        createdBy: users[0]
+        createdBy: users[0],
+        comments: [{
+          content: 'Love this place', createdBy: users[0], stars: 3 },
+        { content: 'this is soooo nice', createdBy: users[1], stars: 2 },
+        { content: 'this is soooo nice', createdBy: users[2], stars: 3
+        }]
       },{
         name: 'Japanika',
         location: 'Tower Hamlets, Spitalfields',
@@ -108,9 +121,9 @@ User
         stars: 4,
         createdBy: users[1],
         comments: [{
-          content: 'Love this place', createdBy: users[0]},
-        { content: 'this is soooo nice', createdBy: users[1]},
-        { content: 'this is soooo nice', createdBy: users[2]
+          content: 'Love this place', createdBy: users[0], stars: 3 },
+        { content: 'this is soooo nice', createdBy: users[1], stars: 0 },
+        { content: 'this is soooo nice', createdBy: users[2], stars: 2
         }]
       }]);
   })

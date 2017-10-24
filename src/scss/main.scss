@@ -1,16 +1,47 @@
 $font-stack:      'Roboto', sans-serif;
-$primary-color:   #FFF9B5;
-$background-img:  'https://wallpaperscraft.com/image/tables_cafe_view_interior_glass_39232_3840x2400.jpg';
+$primary-color:   rgba(33, 21, 143, 0.1);
+$background-img:  'https://i.pinimg.com/originals/1b/0d/53/1b0d53932f6ee65c879bffffe9fea9ba.jpg';
+$nav-image:       'http://gbc-cdn-public-media.azureedge.net/img64617.1426x713.jpg';
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: url($background-img);
-  background-size: cover;
+  // background-image: url($background-img);
+  // background-size: cover;
   // background-repeat: no-repeat;
 }
 
+header {
+  background-image: url('http://gbc-cdn-public-media.azureedge.net/img64617.1426x713.jpg')
+}
+
+//STRUCTURE
 nav {
   margin: 0 0 5px 0;
-  height: 80px;
-  background-color: rgba(33, 21, 143, 0.65);
+  height: 350px;
+  background-image: $nav-image;
+}
+
+div.large-6.medium-12.columns {
+  height: 650px;
+  margin-top: 20px;
+}
+
+
+.meal-image {
+  padding-top: 70%;
+  background-position: center;
+  background-size: cover;
+}
+
+
+footer {
+  clear: both;
+  padding-top: 50px;
+}
+
+
+// Items
+li.nav-item {
+  list-style: none;
+  margin: 0 10px 0 0;
 }

@@ -4,23 +4,20 @@
   </button>
   <a class="navbar-brand" href="/meals">Katsu Spots</a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
     <% if(!locals.isAuthenticated) { %>
-    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a href="/login">Login</a>
+      </li>
       <li class="nav-item">
         <a href="/register">Register</a>
       </li>
-      <li class="nav-item">
-        <li><a href="/login">Login</a></li>
-      </li>
     <% } else { %>
       <li class="nav-item">
-        <a href="#"><%= user.username %></a>
-      </li>
-      <li class="nav-item navbar-right">
-        <a href="/logout">Logout</a>
+        <a href="/meals/new">Add a meal</a>
       </li>
       <li class="nav-item">
-        <a href="/meals/new">Add a meal</a>
+      <a href="/logout">Logout</a>
       </li>
     <% } %>
     </ul>

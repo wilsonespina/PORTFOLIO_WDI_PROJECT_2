@@ -1,18 +1,22 @@
 <% meals.forEach((meal) => { %>
-  <div class="large-6 columns">
-    <a href="/meals/<%= meal.id %>">
-      <img class="thumbnail" src="<%= meal.image %>" alt="<%= meal.name %>" width=500px>
-      <h2><%= meal.name %></h2>
-      <p>
-        <%= meal.location %><br>
-        <%= meal.description %><br>
-      </p>
-      <p>
-        <% while(meal.stars--) { %> &star; <% } %>
-      </p>
-      <p>
-        <%= meal.createdBy.username %>
-      </p>
-    </a>
+  <div class="large-6 medium-12 columns">
+      <a href="/meals/<%= meal.id %>">
+        <div class=images>
+          <div class="meal-image" style="background-image:url(<%= meal.image %>)"></div>
+        </div>
+        <h2><%= meal.name %></h2>
+      </a>
+
+        <p>
+          <%= meal.location %><br>
+          <%= meal.description %><br>
+        </p>
+        <p>
+          <% while(meal.stars--) { %> &star; <% } %>
+        </p>
+        <p>
+          <%= meal.createdBy.username %>
+        </p>
+
   </div>
 <% }) %>

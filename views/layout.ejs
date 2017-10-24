@@ -3,18 +3,20 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Katsuper Store</title>
   <% include ./partials/_stylesheets.ejs %>
-  <script src="/js/client.js" charset="utf-8"></script>
+  <title>Katsuper Store</title>
 </head>
 <body>
-  <% include ./partials/_navbar %>
-  <% for(const type in messages) { %>
-    <div class="callout <%= type %>">
-      <h5><%= messages[type] %></h5>
-    </div>
-  <% } %>
+  <header class ="container">
+    <% include ./partials/_navbar %>
+  </header>
+
   <main class="container">
+    <% for(const type in messages) { %>
+      <div class="callout <%= type %>">
+        <h5><%= messages[type] %></h5>
+      </div>
+      <% } %>
     <%- body %>
   </main>
 

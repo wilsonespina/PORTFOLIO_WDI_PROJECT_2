@@ -54,6 +54,7 @@ function showRoute(req, res, next) {
       const array = meal.comments;
       console.log(array);
       const newArray = [];
+      // if(!array) ONLY WORKS IF THERES COMMENTS
       for (var i = 0; i < array.length; i++) {
         const rating = array[i].stars;
         newArray.push(rating);

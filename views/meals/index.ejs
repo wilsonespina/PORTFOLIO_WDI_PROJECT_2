@@ -1,18 +1,15 @@
 <% meals.forEach((meal) => { %>
-  <div class="large-2 columns">
+  <div class="large-6 columns">
     <a href="/meals/<%= meal.id %>">
       <img class="thumbnail" src="<%= meal.image %>" alt="<%= meal.name %>" width=500px>
       <h2><%= meal.name %></h2>
       <p>
-        <%= meal.description %><br>
         <%= meal.location %><br>
-
+        <%= meal.description %><br>
       </p>
-
       <p>
         <% while(meal.stars--) { %> &star; <% } %>
       </p>
-
       <p>
         <%= meal.createdBy.username %>
       </p>

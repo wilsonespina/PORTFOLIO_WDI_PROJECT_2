@@ -39,7 +39,8 @@ div.large-6.medium-12.columns {
 
 footer {
   clear: both;
-  padding-top: 50px;
+  padding-top: 10px;
+  height: 200px;
 }
 
 
@@ -47,4 +48,10 @@ footer {
 li.nav-item {
   list-style: none;
   margin: 0 10px 0 0;
+}
+
+p.copyright {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 }

@@ -5,20 +5,23 @@ $nav-image:       'http://gbc-cdn-public-media.azureedge.net/img64617.1426x713.j
 
 body {
   font-family: 'Roboto', sans-serif;
-  // background-image: url($background-img);
-  // background-size: cover;
-  // background-repeat: no-repeat;
 }
 
 header {
-  background-image: url('http://gbc-cdn-public-media.azureedge.net/img64617.1426x713.jpg')
+  position: relative;
+
 }
 
 //STRUCTURE
 nav {
   margin: 0 0 5px 0;
   height: 350px;
-  background-image: $nav-image;
+  background-image: url($nav-image);
+  // transform: translate(0%, 50%);
+  background-size: inherit;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 div.large-6.medium-12.columns {

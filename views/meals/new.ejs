@@ -3,24 +3,28 @@
     <label for="name">Name</label>
     <input type="text" name="name" id="name" required>
   </div>
-  <div>
-    <label for="description">Description</label>
-    <input type="text" name="description" id="description" required>
-  </div>
   <fieldset>
     <legend>Address</legend>
     <div>
       <label for="location">Location</label>
-      <input type="text" name="location" id="location" required>
+      <input type="text" name="location" id="location" placeholder="e.g. Soho, Central London"required>
     </div>
   </fieldset>
   <div>
-    <label for="stars">Stars</label>
-    <input type="number" name="stars" id="stars" min="1" max="5" required>
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description" required>
   </div>
   <div>
-    <label for="image">Image</label>
+    <label for="image">Image url</label>
     <input type="text" name="image" id="image" required>
+  </div>
+  <div>
+    <label for="googleMaps">Map</label>
+    <input type="text" name="googleMaps" id="googleMaps" required>
+  </div>
+  <div>
+    <label for="stars">Stars</label>
+    <input type="number" name="stars" id="stars" min="0" max="5" placeholder="0-5 stars"required>
   </div>
 
   <button class="button">Add Katsu Spot</button>

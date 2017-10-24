@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const commentSchema = new mongoose.Schema({
   content: { type: String, required: true },
   createdBy: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
-  stars: { type: Number, required: true }
+  stars: Number
 }, {
   timestamps: true
 });
@@ -18,7 +18,7 @@ const mealSchema = new mongoose.Schema({
   location: { type: String, required: true },
   description: String,
   image: { type: String, required: true },
-  googleMaps: { type: String, required: true },
+  googleMaps: String,
   stars: Number, //add average rating instead
   createdBy: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   comments: [ commentSchema ]

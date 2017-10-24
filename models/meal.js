@@ -19,7 +19,7 @@ const mealSchema = new mongoose.Schema({
   description: String,
   image: { type: String, required: true },
   googleMaps: { type: String, required: true },
-  stars: { type: Number, required: true }, //add average rating instead
+  stars: Number, //add average rating instead
   createdBy: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   comments: [ commentSchema ]
 });

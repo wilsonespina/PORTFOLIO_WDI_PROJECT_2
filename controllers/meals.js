@@ -6,17 +6,19 @@ function indexRoute(req, res, next) {
     .populate('createdBy')
     .exec()
     .then((meals) => {
-      const array = meals;
-      console.log(array);
+      // // const array = meals[0].comments[0].stars;
+      // const array = meals
+      // console.log(meals.length);
       // const newArray = [];
-      // for (var i = 0; i < array.length; i++) {
-      //   const rating = array[i].stars;
+      // //
+      // for (let i = 0; i < meals.length; i++) {
+      //   const rating = array[i].comments
       //   newArray.push(rating);
       // }
       // const result = newArray.reduce(function(accumulator, currentValue) {
       //   return accumulator + currentValue;
       // });
-      // const avgRating = Math.ceil(result / array.length);
+      //   const avgRating = Math.ceil(result / array.length);
       res.render('meals/index', { meals } );
     })
     .catch(next);

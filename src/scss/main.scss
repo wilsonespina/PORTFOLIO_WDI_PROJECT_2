@@ -27,14 +27,7 @@ header {
 
 //STRUCTURE
 nav {
-  // margin: 0 0 5px 0;
-  // height: 350px;
-  // background-image: url($nav-image);
-  // transform: translate(0%, 50%);
-  // background-size: inherit;
-  // position: absolute;
-  // bottom: 0;
-  // right: 0;
+  background-color: beige;
 }
 
 div.large-6.medium-12.columns {
@@ -65,6 +58,15 @@ footer {
 li.nav-item {
   list-style: none;
   margin: 0 10px 0 0;
+}
+
+p.star-rating {
+  font-size: 30px;
+  color: gold;
+}
+
+p.user {
+  color: grey;
 }
 
 p.copyright {

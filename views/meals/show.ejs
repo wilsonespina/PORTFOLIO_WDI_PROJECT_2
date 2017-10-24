@@ -1,22 +1,18 @@
 <div class="large-12 columns">
   <img src="<%= meal.image %>" alt="<%= meal.name %>" width=800px>
   <h2><%= meal.name %></h2>
-  <h3>Average rating <%= avgRating %></h3>
 
-  <p>
-    <%= meal.location %><br>
-    <%= meal.description %><br>
-  </p>
+    <p class="star-rating">
+      <% while(avgRating--) { %> &#9733; <% } %>
+    </p>
 
-  <p>
-    <% while(avgRating--) { %> &#9733; <% } %>
-  </p>
+  <h3><%= meal.location %></h3><br>
+  <p><%= meal.description %></p><br>
+
 
   <iframe src="<%= meal.googleMaps %>" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-  <p>
-    <%= meal.createdBy.username %>
-  </p>
+  <p class="user"><%= meal.createdBy.username %></p>
 
   <% if(locals.isAuthenticated && meal.belongsTo(user)) { %>
   <a href="/meals/<%= meal.id %>/edit">Edit</a>
@@ -39,7 +35,9 @@
 <section>
   <h4>Comments</h4>
   <% meal.comments.forEach((comment) => { %>
+
     <p><%= comment.content %></p>
+    <% while(comment.stars--) { %> &#9733; <% } %><br>
     <small><%= comment.createdBy.username %></small>
 
     <% if(locals.isAuthenticated && comment.belongsTo(user)) { %>

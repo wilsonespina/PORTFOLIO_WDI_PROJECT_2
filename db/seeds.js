@@ -46,7 +46,7 @@ User
         description: 'Simple Japanese diner serving sushi, bento, noodles and curries',
         image: 'https://media-cdn.tripadvisor.com/media/photo-s/07/13/8d/8a/tokyo-diner.jpg',
         googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0742499945195!2d-0.13152908445416628!3d51.511853779635786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d278f6369d%3A0x3cb44bdffa6c1563!2sTokyo+Diner!5e0!3m2!1sen!2suk!4v1508836497189',
-        stars: '', //find average!!!
+        stars: '4', //find average!!!
         createdBy: users[0],
         comments: [{
           content: 'Love this place',

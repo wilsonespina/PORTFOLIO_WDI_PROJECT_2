@@ -1,4 +1,16 @@
+$font-stack:      'Roboto', sans-serif;
+$primary-color:   #FFF9B5;
+$background-img:  'https://wallpaperscraft.com/image/tables_cafe_view_interior_glass_39232_3840x2400.jpg';
+
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: beige;
+  background-image: url($background-img);
+  background-size: cover;
+  // background-repeat: no-repeat;
+}
+
+nav {
+  margin: 0 0 5px 0;
+  height: 80px;
+  background-color: rgba(33, 21, 143, 0.65);
 }

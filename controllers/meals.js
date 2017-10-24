@@ -36,6 +36,14 @@ function showRoute(req, res, next) {
     .populate('createdBy comments.createdBy')
     .exec()
     .then((meal) => {
+      console.log(meal);
+      // create new array containing all comment ratings
+      // array.filter <-- google
+      // const mealRatings = [3,4,4,2,1]
+
+      // do logic to find average
+      // const avgRating = 4
+
       if(!meal) return res.notFound();
       return res.render('meals/show', { meal });
     })

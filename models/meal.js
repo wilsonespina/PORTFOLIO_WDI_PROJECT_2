@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 
 const commentSchema = new mongoose.Schema({
   content: { type: String, required: true },
-  createdBy: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
+  createdBy: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
+  stars: { type: Number, required: true }
 }, {
   timestamps: true
 });

@@ -28,6 +28,14 @@ User
     username: 'stevey',
     password: 'password',
     passwordConfirmation: 'password'
+  },
+  {
+    firstName: 'Mike',
+    lastName: 'Stuart',
+    email: 'mikeys@gmail.com',
+    username: 'mikeysausage',
+    password: 'password',
+    passwordConfirmation: 'password'
   }])
   .then((users) => {
     console.log(`${users.length} users created`);
@@ -39,7 +47,12 @@ User
         image: 'https://media-cdn.tripadvisor.com/media/photo-s/07/13/8d/8a/tokyo-diner.jpg',
         googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0742499945195!2d-0.13152908445416628!3d51.511853779635786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d278f6369d%3A0x3cb44bdffa6c1563!2sTokyo+Diner!5e0!3m2!1sen!2suk!4v1508836497189',
         stars: 4,
-        createdBy: users[0]
+        createdBy: users[0],
+        comments: [{
+          content: 'Love this place', createdBy: users[0]},
+        { content: 'Great atmosphere, their katsu curry is my jam.', createdBy: users[1]},
+        { content: 'This is soooo nice', createdBy: users[2]
+        }]
       },{
         name: 'Hare & Tortoise',
         location: 'Brunskwick Square, Bloomsbury',
@@ -47,7 +60,12 @@ User
         image: 'https://www.mybookingbox.co.uk/uploads/venue/resto/201511140548005142.jpg',
         googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19864.59457714899!2d-0.1468499817681479!3d51.51185245595083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b30b38aa395%3A0xc681d5dde4ad8d04!2sHare+%26+Tortoise!5e0!3m2!1sen!2suk!4v1508836819778',
         stars: 4,
-        createdBy: users[1]
+        createdBy: users[1],
+        comments: [{
+          content: 'Love this place', createdBy: users[0]},
+        { content: 'this is soooo nice', createdBy: users[1]},
+        { content: 'this is soooo nice', createdBy: users[2]
+        }]
       },{
         name: 'Misato',
         location: 'Wardour Street, Soho',
@@ -55,7 +73,12 @@ User
         image: 'http://chinatown.co.uk/wp-content/uploads/2016/08/misato0.jpg',
         googleMaps: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9932.516021930956!2d-0.1318974!3d51.5108492!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d087f530e2d323b!2sMisato!5e0!3m2!1sen!2suk!4v1508838744472',
         stars: 5,
-        createdBy: users[0]
+        createdBy: users[0],
+        comments: [{
+          content: 'Love this place', createdBy: users[0]},
+        { content: 'this is soooo nice', createdBy: users[1]},
+        { content: 'this is soooo nice', createdBy: users[2]
+        }]
       },{
         name: 'M&D Japanese',
         location: 'Depftford High Street',
@@ -71,7 +94,11 @@ User
         image: 'https://farm4.static.flickr.com/3132/5773144261_b44b43481f_b.jpg',
         googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6164634728298!2d-0.07609838422955319!3d51.52025207963719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb5d5f4ea7f%3A0xd081826761436f6a!2sJapanika!5e0!3m2!1sen!2suk!4v1508839961787',
         stars: 4,
-        createdBy: users[0]
+        createdBy: users[0],
+        comments: [{
+          content: 'Love this place', createdBy: users[0], stars: 3 },
+        { content: 'this is soooo nice', createdBy: users[2], stars: 3
+        }]
       },{
         name: 'The Japanese Canteen',
         location: 'Bishopsgate',
@@ -79,7 +106,12 @@ User
         image: 'https://junk4lunch.files.wordpress.com/2013/07/wpid-img_20130709_japanesecanteen2.jpg',
         googleMaps: 'https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2482.8692793400655!2d-0.08036858422973489!3d51.51561417963646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sthe+japanese+canteen+bishopsgate!5e0!3m2!1sen!2suk!4v1508840321503',
         stars: 4,
-        createdBy: users[1]
+        createdBy: users[1],
+        comments: [{
+          content: 'Love this place', createdBy: users[0]},
+        { content: 'this is soooo nice', createdBy: users[1]},
+        { content: 'this is soooo nice', createdBy: users[2]
+        }]
       }]);
   })
 

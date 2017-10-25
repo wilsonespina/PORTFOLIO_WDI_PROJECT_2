@@ -140,54 +140,54 @@ User
       },{
         name: 'M&D Japanese',
         location: 'Depftford High Street',
-        description: 'Unassuming Japanese restaurant in Deptford serving up an extensive menu of sushi, noodles and hot dishes.',
+        description: 'It\'s an unassuming Japanese restaurant in Deptford serving up an extensive menu of sushi, noodles and hot dishes.',
         image: 'https://intrepidbean.files.wordpress.com/2015/06/md3.jpg',
         googleMaps: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9939.721258977064!2d-0.0260776!3d51.4777934!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5035fb7fe6920089!2sM+and+D+Japanese+Deptford!5e0!3m2!1sen!2suk!4v1508839845640',
         stars: 4,
         createdBy: users[0],
         comments: [{
-          content: 'Love this place',
-          createdBy: users[5], stars: 3
+          content: 'Cheap easy and fast, great little take away joint (not to mention it\'s pretty tasty) we go here when we want a fairly healthy takeaway and have the sushi and maybe some noodles/rice -- Katsu is pretty standard and the salmon teriyaki is pretty good',
+          createdBy: users[5], stars: 4
         },
         {
-          content: 'this is soooo nice',
-          createdBy: users[3], stars: 2
+          content: 'A nice little joint in Deptford that locals go to all the time.',
+          createdBy: users[3], stars: 4
         },
         {
-          content: 'this is soooo nice',
-          createdBy: users[2], stars: 3
+          content: 'Not a fan. I\'m not sure how clean the kitchen is.',
+          createdBy: users[2], stars: 1
         }]
       },{
         name: 'Japanika',
         location: 'Tower Hamlets, Spitalfields',
-        description: 'Minuscule Japanese fast food restaurant with contemporary decor including a miniature zen garden.',
+        description: 'Forget Wagamama, Yo!, Wasabi etc! This place has the best Chicken Katsu curry in London! The staff are friendly and its a very good service. Even writing this review makes me want to go there tomorrow lunch time!',
         image: 'https://farm4.static.flickr.com/3132/5773144261_b44b43481f_b.jpg',
         googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6164634728298!2d-0.07609838422955319!3d51.52025207963719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb5d5f4ea7f%3A0xd081826761436f6a!2sJapanika!5e0!3m2!1sen!2suk!4v1508839961787',
-        stars: 4,
+        stars: 5,
         createdBy: users[0],
         comments: [{
-          content: 'Love this place', createdBy: users[0], stars: 3 },
-        { content: 'this is soooo nice', createdBy: users[2], stars: 3
+          content: 'Good spot for Lunch and a favourite in the area. Just your typical pre made elsewhere heated in-store fare (or packaged in the case of sushi).', createdBy: users[1], stars: 4 },
+        { content: 'limited choice, But great for a quick and easy lunch. Food tastes fresh and rolls are made very well compared to other Japanese joints. Recommended if you need something quick, tastey and easy.', createdBy: users[5], stars: 3
         }]
       },{
         name: 'The Japanese Canteen',
         location: 'Bishopsgate',
-        description: 'Shared tables and an uncluttered vibe are the hallmarks of this Japanese hot- and cold-food chain.',
+        description: 'Used to be my favourite place to grab lunch when I was studying in central London. Chicken katsu with fresh spring onions and king prawns with sweet chili are great there! The prices are very cheap and the food quality is superb! It is all prepared fresh when you make an order, that is why whatever you have tastes great! The service is quick and efficient with no frills what so ever. Lots of spaces to eat. The portions are generous so you won\'t stay hungry..',
         image: 'https://junk4lunch.files.wordpress.com/2013/07/wpid-img_20130709_japanesecanteen2.jpg',
         googleMaps: 'https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2482.8692793400655!2d-0.08036858422973489!3d51.51561417963646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sthe+japanese+canteen+bishopsgate!5e0!3m2!1sen!2suk!4v1508840321503',
         stars: 4,
         createdBy: users[4],
         comments: [{
-          content: 'Love this place',
-          createdBy: users[0], stars: 3
+          content: 'The place is a bit plain, but the food is fresh and tasty. At least it is called a canteen, but there cheaper canteens around.',
+          createdBy: users[3], stars: 3
         },
         {
-          content: 'this is soooo nice',
+          content: 'Not fussed by this one.',
           createdBy: users[1], stars: 0
         },
         {
-          content: 'this is soooo nice',
-          createdBy: users[2], stars: 2
+          content: 'Liked it very much. Lots of Korean stuff on menu which was welcome',
+          createdBy: users[2], stars: 5
         }]
       }]);
   })

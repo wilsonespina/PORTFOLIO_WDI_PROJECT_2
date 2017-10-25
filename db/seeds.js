@@ -115,32 +115,27 @@ User
           stars: 1
         }]
       },{
-        name: 'Misato',
-        location: 'Wardour Street, Soho',
-        description: 'Situated among the hundreds of restaurants in Chinatown, Misato has to fight for attention. But it succeeds. The presence of katsu curries (pork and chicken) captures our interest, while the price (£6.50!) draws us in and the flavour keeps us coming back.',
-        image: 'http://chinatown.co.uk/wp-content/uploads/2016/08/misato0.jpg',
-        googleMaps: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9932.516021930956!2d-0.1318974!3d51.5108492!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d087f530e2d323b!2sMisato!5e0!3m2!1sen!2suk!4v1508838744472',
+        name: 'Katsu Wraps',
+        location: 'Petticoat Lane, Aldgate East',
+        description: 'The katsu wraps are so moreish at this market stall. They\'re realy filling and always made in a speedy way. The best part about this is the interesting customer service from the woman who deals with taking money.',
+        image: 'https://thecitylane.com/wp-content/uploads/2015/06/Katsu03.jpg',
+        googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.817131649463!2d-0.07517982680420232!3d51.51657085199001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb4968c0e5f%3A0xe48f833a083f50d7!2sKatsu+Wrap!5e0!3m2!1sen!2suk!4v1508924590355',
         stars: 5,
         createdBy: users[5],
         comments: [{
-          content: 'Love this place',
+          content: 'One of my favourite lunches. Tasty and filling, for only £4.50! Tip: Just unwrap the paper a bit at a time so it doesn\'t fall apart!',
           createdBy: users[3],
-          stars: 3
+          stars: 4
         },
         {
-          content: 'Not reallt a fan',
+          content: 'Amazing place, Fastest service, Hummus makes the katsu wrap come to life. For the price, this is one of my favourite places in London',
           createdBy: users[1],
-          stars: 2
+          stars: 5
         },
         {
-          content: 'Not reallt a fan',
-          createdBy: users[2],
-          stars: 2
-        },
-        {
-          content: 'this is soooo nice',
+          content: 'Love this place!',
           createdBy: users[4],
-          stars: 3
+          stars: 5
         }]
       },{
         name: 'M&D Japanese',

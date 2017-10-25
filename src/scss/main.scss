@@ -3,8 +3,10 @@ $primary-color:   rgba(33, 21, 143, 0.1);
 $background-img:  'https://i.pinimg.com/originals/1b/0d/53/1b0d53932f6ee65c879bffffe9fea9ba.jpg';
 $nav-image:       'http://gbc-cdn-public-media.azureedge.net/img64617.1426x713.jpg';
 
-section.homepage {
+div.homepage {
   margin: 20px 0 60px 0;
+  text-align: center;
+
 }
 
 body {
@@ -37,24 +39,30 @@ header {
 }
 
 //STRUCTURE
+
+
 nav {
   background-color: rgba(199, 134, 0, 0.2);
   text-transform: uppercase;
 }
 
 #header1 {
-  height: 50px;
+  min-height: 50px;
   border-bottom: 1px solid #6e5d54;
   border-top: 1px solid #6e5d54;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 
 }
 
+h2 {
+  margin: 15px 0 5px 0;
+}
+
 div.large-6.medium-12.columns {
-  height: 750px;
-  margin: 0 0 4px 0;
-  border-bottom: 1px solid #6e5d54;
-  border-top: 1px solid #6e5d54;
+  min-height: 750px;
+  margin: 0 0 0 0;
+  border-left: 1px solid #6e5d54;
+  border-right: 1px solid #6e5d54;
   background-color: rgba(199, 134, 0, 0.2);
 }
 
@@ -74,11 +82,12 @@ div.meal-image {
 footer {
   clear: both;
   padding-top: 270px;
+  margin: 30px 0 0 0;
   height: 300px;
   background-image: url('http://asiansupper.com/files/katsu-curry-recipe-1.jpg');
   background-position: center;
   background-size: cover;
-  position: relative;
+  // position: relative;
 }
 
 
@@ -88,6 +97,10 @@ li.nav-item {
   margin: 0 25px 0 0;
   font-size: 17px;
   font-weight: 500;
+}
+
+ul.navbar-nav.ml-auto {
+  // display: block;
 }
 
 p.star-rating {
@@ -123,5 +136,9 @@ textarea {
 }
 
 img#opening-image {
+  width: 1500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   opacity: 0.9;
 }

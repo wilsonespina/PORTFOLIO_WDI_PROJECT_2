@@ -48,9 +48,9 @@ nav {
 div.large-6.medium-12.columns {
   height: 650px;
   margin: 4px 0 4px 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom: 1px solid #6e5d54;
-  border-top: 1px solid #6e5d54;
+  border-top: 1px solid #6e5d54
+  color: rgba(199, 134, 0, 0.2);
 }
 
 div.heading {
@@ -58,7 +58,8 @@ div.heading {
   width: 45%;
 }
 
-.meal-image {
+div.meal-image {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-top: 70%;
   background-position: center;
   background-size: cover;

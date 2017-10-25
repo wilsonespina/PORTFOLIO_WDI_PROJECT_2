@@ -3,7 +3,7 @@
   <h2><%= meal.name %></h2>
 
     <p class="star-rating">
-      <% while(avgRating--) { %> &#9733; <% } %>
+      <% while(meal.stars--) { %> &#9733; <% } %>
     </p>
 
   <h3><%= meal.location %></h3><br>

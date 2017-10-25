@@ -23,7 +23,6 @@ router.route('/meals/:id')
   .put(secureRoute, mealsController.update)
   .delete(secureRoute, mealsController.delete);
 
-
 router.route('/register')
   .get(registrationsController.new)
   .post(registrationsController.create);

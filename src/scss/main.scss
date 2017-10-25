@@ -23,14 +23,16 @@ header {
   height: 300px;
 
   a.main-heading {
-    line-height: 400px;
-    color: #fff;
-    font-weight: bold;
+    line-height: 466px;
+    color: #e2cba2;
+    font-weight: 700;
     margin-left: 30px;
-    font-size: 4.5rem;
+    font-size: 70px;
     min-width: 100%;
     word-wrap: normal;
     text-decoration: none;
+    font-family: 'Permanent Marker',cursive;
+    text-shadow: 2px 2px 8px #393c32;
   }
 }
 
@@ -118,4 +120,8 @@ img {
 
 textarea {
   max-width: 600px;
+}
+
+img#opening-image {
+  opacity: 0.9;
 }

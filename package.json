@@ -4,7 +4,7 @@
   "description": "Project 2 for WDI London.",
   "main": "index.js",
   "scripts": {
-    "postinstall": "gulp delpoy"
+    "postinstall": "gulp deploy"
   },
   "author": "",
   "license": "ISC",

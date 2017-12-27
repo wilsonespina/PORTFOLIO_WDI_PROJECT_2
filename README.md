@@ -8,9 +8,9 @@
 
 ## SUMMARY
 
-My final project at General Assembly was to create a full MERN stac.................
+For my second major project at GA, I created my first fully RESTful application with backend authentication using Express.js Sessions. This project was my first opportunity to get to grips with an application that demonstrated the create, read update, delete (CRUD) functionality found in most websites.
 
-Within project two, I created my first fully RESTful application with backend authentication using Express.js Sessions. This project was my first opportunity to get to grips with an application that demonstrated the create, read update, delete (CRUD) functionality found in most websites. In this project, I used embedded JavaScript (EJS) to create views rendered on the browser to display information on the best katsu curry locations in London.
+During the course at GA, my course mates and I often got food from a local food market near the campus. One particular Japanese Katsu wrap stall stood out and in tribute to that stall I chose to create site all about the best Katsu spot in London. The app uses embedded JavaScript (EJS) to render views in the browser and users can add, rate and comment on their favourite katsu curry places.
 
 
 ### Programming and Technology Library:
@@ -28,15 +28,34 @@ Within project two, I created my first fully RESTful application with backend au
 * express-flash
 * bluebird
 
+## STYLING
+
+Having looked for inspiration from other food based websites, I noticed that
+
+![](README/screenshots/combined_screenshot1.jpg)
+> Figure 1 -
+
+![](README/screenshots/combined_screenshot2.jpg)
+> Figure 2 -
+
 ## PLANNING
+![](README/screenshots/Trello_pic1.jpg)
+> Figure 3 -
+
 
 ## FEATURES
-![](README/screenshots/combined_screenshot1.png)
+### Authentication
+sessions
 
-![](README/screenshots/combined_screenshot2.png)
+
+### Average Rating
+backend fucntionality
+
+### Comments
+create and delete
 
 ## LESSONS LEARNED
-1. 
+1.
 
 ## FEATURES BACKLOG
-1. 
+1.

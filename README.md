@@ -1,7 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) WDI Project 2: RESTful app with authentication  - ‘KatSuper Store’
 
-
-**[https://katsuper-store.herokuapp.com/](https://katsuper-store.herokuapp.com//)**
+Adding additional features to WDI_PROJECT_2 - Original project **[https://katsuper-store.herokuapp.com/](https://katsuper-store.herokuapp.com//)**
 
 ![](README/screenshots/screenshot_landingpage.jpg)
 
@@ -27,35 +26,3 @@ During the course at GA, my course mates and I often got food from a local food 
 * body-parser
 * express-flash
 * bluebird
-
-## STYLING
-
-Having looked for inspiration from other food based websites, I noticed that
-
-![](README/screenshots/combined_screenshot1.jpg)
-> Figure 1 -
-
-![](README/screenshots/combined_screenshot2.jpg)
-> Figure 2 -
-
-## PLANNING
-![](README/screenshots/Trello_pic1.jpg)
-> Figure 3 -
-
-
-## FEATURES
-### Authentication
-sessions
-
-
-### Average Rating
-backend fucntionality
-
-### Comments
-create and delete
-
-## LESSONS LEARNED
-1.
-
-## FEATURES BACKLOG
-1.

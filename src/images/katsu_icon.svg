@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- SET/KIT(FOOD) -->
+<svg id="icon_13" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+	<rect fill="#D09A00" width="21" height="21"/>
+	<path fill="#FFFFFF" d="M2.467,9.327c0,4.031,3.597,7.298,8.033,7.298c4.436,0,8.033-3.267,8.033-7.298H2.467z"/>
+	<path fill="#FFFFFF" d="M17.352,7.794c0-2.774-3.422-5.022-6.852-5.022c-3.429,0-6.851,2.249-6.851,5.022H17.352z"/>
+	<rect x="7.409" y="15.053" fill="#FFFFFF" width="6.183" height="2.895"/>
+</svg>
